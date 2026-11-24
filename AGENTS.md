@@ -14,7 +14,7 @@ why.
 Can (`ogulcancelik`) maintains it. The code is authoritative; ask the
 maintainer about conflicting requirements.
 
-`hc --skill` prints the manual in `crates/herdr-core/src/SKILL.md`. The
+`hc --skill` prints the manual in `crates/herdr-core/src/manual.md`. The
 installable skill is the short stub in `skills/herdr-core/SKILL.md`: it says
 when to use hc and points to `hc --skill`, so it rarely changes.
 Keep the manual current when changing agent-facing behavior.

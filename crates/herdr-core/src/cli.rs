@@ -119,7 +119,7 @@ enum Cmd {
 }
 
 const HELP: &str = include_str!("help.txt");
-const SKILL: &str = include_str!("SKILL.md");
+const SKILL: &str = include_str!("manual.md");
 
 /// Every command a person or agent can type (for checking the help names them all).
 pub fn command_names() -> Vec<String> {

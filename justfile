@@ -69,8 +69,8 @@ pre-release: check docs-check
     last=$(git describe --tags --abbrev=0 --match 'v*')
     echo; echo "Since $last:"; git log --oneline "$last"..HEAD
     echo
-    if git diff --quiet "$last"..HEAD -- crates/herdr-core/src/SKILL.md; then
-      echo "review: the agent manual (hc --skill, crates/herdr-core/src/SKILL.md) is unchanged since $last. Does it still match the changes above?"
+    if git diff --quiet "$last"..HEAD -- crates/herdr-core/src/manual.md; then
+      echo "review: the agent manual (hc --skill, crates/herdr-core/src/manual.md) is unchanged since $last. Does it still match the changes above?"
     else
       echo "review: the agent manual (hc --skill) changed since $last. Read it once more."
     fi
